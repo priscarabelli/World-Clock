@@ -45,7 +45,7 @@ function updateCity(event){
     <h2>${cityName}</h2></div>
 <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
 <div class="time">${cityTime.format("HH:mm:ss")}<small>${cityTime.format("A")}</small></div>
-<p> <a href="https://worldclockbypri.netlify.app/"> Back Home </a></p>
+<p> <a href="/"> Back Home </a></p>
     `;  
 }
 
