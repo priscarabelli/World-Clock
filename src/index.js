@@ -18,7 +18,7 @@ let telAvivTime = moment().tz("Asia/Tel_Aviv");
 secondCityDate.innerHTML = telAvivTime.format("MMMM Do YYYY ");
 secondCityTimeElement.innerHTML = telAvivTime.format("HH:mm:ss [<small>]A[</small>]");
 }
-// Rio de janeiro
+// Melbourne
 let thirdCityElement = document.querySelector("#third-city");
 if (thirdCityElement){
 let thirdCityDate = thirdCityElement.querySelector(".date");
@@ -29,9 +29,6 @@ thirdCityTimeElement.innerHTML = melbourneTime.format("HH:mm:ss [<small>]A[</sma
 }
 }
 
-updateTime();
-setInterval(updateTime, 1000);
-
 function updateCity(event){
     let cityTimeZone = event.target.value;
     if (cityTimeZone === "current"){
@@ -41,7 +38,7 @@ function updateCity(event){
     let cityTime = moment().tz(cityTimeZone);
     let citiesElement = document.querySelector("#cities");
     citiesElement.innerHTML = `
-    <div class="first-city second-city third-city">
+    <div "city">
     <h2>${cityName}</h2></div>
 <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
 <div class="time">${cityTime.format("HH:mm:ss")}<small>${cityTime.format("A")}</small></div>
@@ -49,5 +46,13 @@ function updateCity(event){
     `;  
 }
 
+
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change" , updateCity)
+
+
+
+updateTime();
+setInterval(updateTime, 1000);
+
+
