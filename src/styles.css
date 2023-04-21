@@ -45,9 +45,6 @@ background-size: 100%;
    text-align: center;
    border-radius: 10px;
 }
-.clock-icon{
-    color: #BF61CB;
-}
 .first-city , .second-city , .third-city {
 background-color: rgba( 0, 0, 0, .4);  
 color: #F8F8F8;  
@@ -64,8 +61,7 @@ display: block;
 }
 
 .time{
-    font-size: 48px; 
-   
+    font-size: 48px;   
 }
 .time small{
     font-size: 18px;

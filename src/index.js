@@ -34,6 +34,9 @@ setInterval(updateTime, 1000);
 
 function updateCity(event){
     let cityTimeZone = event.target.value;
+    if (cityTimeZone === "current"){
+        cityTimeZone = moment.tz.guess();
+    }
     let cityName = cityTimeZone.replace("_"," ").split("/")[1];
     let cityTime = moment().tz(cityTimeZone);
     let citiesElement = document.querySelector("#cities");
@@ -42,6 +45,7 @@ function updateCity(event){
     <h2>${cityName}</h2></div>
 <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
 <div class="time">${cityTime.format("HH:mm:ss")}<small>${cityTime.format("A")}</small></div>
+<p> <a href="https://worldclockbypri.netlify.app/"> Back Home </a></p>
     `;  
 }
 
