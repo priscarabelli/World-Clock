@@ -1,9 +1,84 @@
-h1{
-    text-align: center;
+body{
+    background-image: url("../images/backgroundWC1.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
 }
-footer{
+
+select {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px;
     text-align: center;
+   background-color: rgba(0, 0, 0, .6);
+ border-color: #9C97FA;
+ color: white;
 }
+
+h1 {
+    text-align: center;
+font-family: 'Zeyada', cursive;
+    font-size: 68px;
+    color: #BF61CB;
+
+}
+img{
+   position: static; 
+   width: 100px;
+}
+h2 {
+    margin: 10px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+   max-width: 800px;
+   margin: 0 auto;
+background-image: url(../images/map.svg.svg);
+background-repeat: no-repeat;
+background-size: 100%;
+   border: 20px;
+   text-align: center;
+   border-radius: 10px;
+
+}
+.clock-icon{
+    color: #BF61CB;
+}
+.first-city , .second-city , .third-city {
+background-color: rgba( 0, 0, 0, .4);  
+color: #F8F8F8;  
+border-radius: 10px;
+display: block;
+    margin: 15px auto;
+    border: 10px;
+    padding: 15px;
+    max-width: 300px; 
+}
+
+.date{
+    font-size: 18px;
+}
+
+.time{
+    font-size: 48px; 
+   
+}
+.time small{
+    font-size: 18px;
+    vertical-align:middle;
+}
+
+
 .github-emoji{
     width: 25px;
         clip-path: circle();

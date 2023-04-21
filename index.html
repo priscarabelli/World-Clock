@@ -4,35 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fcadf5c39a.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles.css"/>
         <title>World Clock</title>
 </head>
 <body>
     <div class="container">
-    <h1>World Clock</h1>
+    <h1>WORLD CLOCK <img src="images/girlclock.svg" alt=""></h1>
 <select>
-<option value="">Select a city</option>
+<option value="">SELECT A CITY </option>
+<option value="">Local time</option>
 <option value="">London</option>
-<option value="">New York</option>
+<option value="">Tel Aviv</option>
 <option value="">Rio de Janeiro</option>
 </select>
-<div class="city">
+<div class="first-city">
+<div class="city" id="first-city">
 <h2>London</h2>
 </div>
 <div class="date">
 August 28th 2023
 </div>
 <div class="time">
-    23:48:25 PM
+    23:48:25 <small>PM</small>
 </div>
+</div>
+<div class="second-city">
 <div class="city">
-    <h2>Paris</h2>
+    <div>
+    <h2>Tel Aviv</h2>
 </div>
 <div class="date">
     August 28th 2023
+    </div>
 </div>
 <div class="time">
-    23:48:25 PM
+    23:48:25 <small>PM</small>
+</div>
+</div>
+<div class="third-city">
+<div class="city">
+    <div>
+    <h2>Rio de Janeiro</h2>
+</div>
+<div class="date">
+    August 28th 2023
+    </div>
+</div>
+<div class="time">
+    23:48:25 <small>PM</small>
+</div>
 </div>
 
     </div>
