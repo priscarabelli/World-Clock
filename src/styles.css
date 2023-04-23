@@ -44,6 +44,7 @@ background-size: 100%;
    border: 20px;
    text-align: center;
    border-radius: 10px;
+   
 }
 .first-city , .second-city , .third-city {
 background-color: rgba( 0, 0, 0, .4);  
